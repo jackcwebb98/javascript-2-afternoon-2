@@ -18,6 +18,9 @@ var arr = [10,20,30];
 */
 
 //Code Here
+function first(arr){
+  return arr.shift()
+}
 
 
 
@@ -33,6 +36,9 @@ var arr = [40,50,60];
 */
 
 //Code Here
+function last(arr){
+  return arr.pop()
+}
 
 
 
@@ -48,7 +54,10 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-
+function looper(family){
+  for (var i=0; i < family.length; i++)
+  alert(family[i])
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -63,7 +72,12 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
+function reversedLooper(letters){
+  for (var i = letters.length-1; i >= 0; i--){
+    alert(letters[i])
+  }
 
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -78,7 +92,15 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
-
+function evenFinder(nums){
+  var arr1 = []
+  for (var i = 0; i <= nums.length; i++){
+    if (nums[i] % 2 === 0){
+      arr1.push(nums[i])
+    }
+  }
+  return arr1
+}
 
 
 
@@ -106,6 +128,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(numbersArray){
+  var allEvens = []
+  var allOdds = []
+  for (let i = 0; i < numbersArray.length; i++){
+    if (numbersArray[i] % 2 === 0){
+      allEvens.push(numbersArray[i])
+    } else if(numbersArray[i] % 2 !== 0){
+      allOdds.push(numbersArray[i])
+    }
+  }
+  return [allEvens, allOdds]
+}
+
 
 
 
@@ -127,6 +162,15 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+function finder(arr){
+  var number = getRandomArbitrary()
+    if (arr.includes(number) === true){
+      return true
+    } else {
+      return false
+    }
+  }
+
 
 
 
@@ -156,6 +200,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+// function removeItem(myGroceryList, itemRemoved){
+//   for (let i = 0; i < myGroceryList.length; i++){
+//     if (){}
+
+//     }
+//   }
+// }
 
 
 
@@ -166,6 +217,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function maker(){
+  var array = []
+  for (let i = 1; i <= 215; i++){
+    array.push(i)
+  }
+  return array
+}
 
 
 
@@ -182,6 +240,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+function addTen(numbers){
+  var newArr = []
+  for(let i = 0; i < numbers.length; i++){
+    newArr.push(numbers[i] + 10)
+  }
+  return newArr
+}
 
 
 
@@ -207,6 +272,14 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+function longer(arr1, arr2){
+  if(arr1.length > arr2.length){
+    return arr1
+  }
+  if (arr2.length > arr1.length){
+    return arr2
+  }
+}
 
 
 
